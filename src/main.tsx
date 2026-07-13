@@ -397,7 +397,7 @@ function App() {
 
         <section className="contact-section" id="contact">
           <p className="eyebrow">Contact</p>
-          <h2>Parlons d’un poste, d’un projet ou d’une collaboration.</h2>
+          <h2>Un poste à pourvoir ou un projet à me présenter ?</h2>
           <a className="contact-email" href={`mailto:${email}`}>
             <MailIcon />
             {email}
