@@ -28,6 +28,18 @@
   grid-column: 1;
 }
 
+.project-copy {
+  justify-content: flex-start;
+}
+
+.project-kicker {
+  margin-bottom: 0;
+}
+
+.project h3 {
+  margin-top: 28px;
+}
+
 @media (max-width: 760px) {
   .brand {
     font-size: 0.74rem;
@@ -39,6 +51,10 @@
 
   .hero h1 {
     font-size: clamp(2.55rem, 12vw, 4.25rem);
+  }
+
+  .project h3 {
+    margin-top: 22px;
   }
 }
 
