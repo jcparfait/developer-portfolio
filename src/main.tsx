@@ -151,13 +151,6 @@ const projects: Project[] = [
   },
 ];
 
-const workPrinciples = [
-  "Partir d’un usage concret.",
-  "Séparer interface et logique métier.",
-  "Tester les parcours critiques.",
-  "Livrer une démonstration accessible.",
-];
-
 const skills = [
   {
     category: "Backend",
@@ -227,8 +220,7 @@ function ProjectCard({ project }: { project: Project }) {
     <article className="project" id={project.id} style={projectStyle}>
       <div className="project-copy">
         <div className="project-kicker">
-          <span>{project.number}</span>
-          <span>Projet sélectionné</span>
+          <span>Projet {project.number}</span>
         </div>
         <h3>{project.title}</h3>
         <p className="project-subtitle">{project.subtitle}</p>
@@ -254,9 +246,8 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="screenshots" aria-label={`Captures d’écran de ${project.title}`}>
-        {project.screenshots.map((screenshot, index) => (
+        {project.screenshots.map((screenshot) => (
           <figure className="phone-frame" key={screenshot.src}>
-            <span className="phone-index">{String(index + 1).padStart(2, "0")}</span>
             <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
           </figure>
         ))}
@@ -301,8 +292,8 @@ function App() {
           <div className="hero-copy">
             <p className="eyebrow">Développement full-stack</p>
             <h1>
-              Je développe des applications
-              <span> à partir de besoins concrets.</span>
+              Je développe des applications web et mobiles,
+              <span> du backend à l’interface.</span>
             </h1>
             <p className="hero-intro">
               Développeur Ruby on Rails et React Native, je travaille du modèle de données jusqu’à l’interface mobile pour construire des produits complets et fonctionnels.
@@ -324,48 +315,28 @@ function App() {
             </div>
           </div>
 
-          <aside className="hero-panel" aria-label="Approche de travail">
-            <div className="panel-header">
-              <span>product-thinking.md</span>
-              <span className="status-dot">actif</span>
-            </div>
-            <div className="panel-body">
-              {workPrinciples.map((principle, index) => (
-                <p key={principle}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  {principle}
-                </p>
-              ))}
-            </div>
-            <div className="panel-footer">
-              <span>Rails</span>
-              <span>React Native</span>
-              <span>TypeScript</span>
-            </div>
-          </aside>
-
           <div className="hero-metrics" aria-label="Résumé du portfolio">
             <div>
               <strong>3</strong>
-              <span>produits terminés</span>
+              <span>projets en ligne</span>
             </div>
             <div>
               <strong>2</strong>
-              <span>écosystèmes principaux</span>
+              <span>stacks principales</span>
             </div>
             <div>
               <strong>100%</strong>
-              <span>déployés et démontrables</span>
+              <span>consultables en démonstration</span>
             </div>
           </div>
         </section>
 
         <section className="projects-section" id="projects">
           <div className="section-heading">
-            <p className="eyebrow">Travaux sélectionnés</p>
-            <h2>Trois projets, trois problèmes résolus.</h2>
+            <p className="eyebrow">Projets</p>
+            <h2>Trois projets concrets, développés et mis en ligne.</h2>
             <p>
-              Chaque projet présente une logique métier, un parcours utilisateur et une mise en production vérifiable.
+              Tiny Act, Bill et Reelist présentent mon travail en développement mobile, backend Rails et intégration d’API.
             </p>
           </div>
 
@@ -387,7 +358,7 @@ function App() {
                 Avant ma reconversion, j’ai dirigé un studio photo dans un environnement de production exigeant. Il fallait structurer les flux, coordonner les besoins techniques et créatifs, identifier les blocages et livrer avec constance.
               </p>
               <p>
-                Le développement prolonge cette démarche : comprendre un usage, modéliser le problème, construire une solution puis vérifier qu’elle fonctionne réellement pour l’utilisateur.
+                Le développement prolonge cette démarche : comprendre un besoin, structurer les données, construire l’application et vérifier son fonctionnement.
               </p>
             </div>
 
@@ -426,7 +397,7 @@ function App() {
 
         <section className="contact-section" id="contact">
           <p className="eyebrow">Contact</p>
-          <h2>Parlons d’un poste, d’un produit ou d’un problème à résoudre.</h2>
+          <h2>Parlons d’un poste, d’un projet ou d’une collaboration.</h2>
           <a className="contact-email" href={`mailto:${email}`}>
             <MailIcon />
             {email}
