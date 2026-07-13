@@ -29,7 +29,7 @@ const projects: Project[] = [
     id: "tiny-act",
     number: "01",
     title: "Tiny Act",
-    subtitle: "Transformer l’inertie en petite action concrète.",
+    subtitle: "Transformer le doomscrolling en petite action concrète.",
     description:
       "Une application mobile qui recommande une micro-activité selon l’humeur, le lieu, le temps disponible et les centres d’intérêt. Le parcours se prolonge avec un historique, une progression par XP et une room personnalisable.",
     accent: "#d7ff58",
@@ -113,7 +113,7 @@ const projects: Project[] = [
     id: "reelist",
     number: "03",
     title: "Reelist",
-    subtitle: "Une bibliothèque cinéma pensée comme un produit.",
+    subtitle: "Une bibliothèque cinéma.",
     description:
       "Une application Rails mobile-first pour créer des collections, importer des films depuis TMDB, choisir des visuels via Pexels et obtenir une recommandation Movie Night selon l’humeur, la durée et le genre.",
     accent: "#7db9ff",
@@ -349,7 +349,7 @@ function App() {
 
         <section className="about-section" id="about">
           <SectionHeading eyebrow="À propos">
-            <h2>Un parcours construit entre production, image et code.</h2>
+            <h2>De la direction de studio photo au développement d’applications</h2>
           </SectionHeading>
 
           <div className="about-grid">
