@@ -4,14 +4,28 @@
   white-space: nowrap;
 }
 
+.hero {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  min-height: auto;
+}
+
+.hero-copy {
+  max-width: 960px;
+}
+
 .hero h1 {
-  max-width: 800px;
-  font-size: clamp(2.7rem, 5.4vw, 5.35rem);
+  max-width: 900px;
+  font-size: clamp(2.7rem, 5.2vw, 5.15rem);
   line-height: 1.04;
 }
 
 .hero h1 span {
   margin-top: 0.08em;
+}
+
+.hero-metrics {
+  grid-column: 1;
 }
 
 @media (max-width: 760px) {
