@@ -1,4 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JC">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JCP">
   <rect width="64" height="64" rx="16" fill="#0b0d10"/>
-  <path d="M18 18h10v22c0 6-4 10-11 10-2 0-4-.3-6-1l2-8c1 .5 2 .7 3 .7 2 0 3-1 3-3V18Zm18 0h16v8H42v5h9v8h-9v11H32V22c0-2 2-4 4-4Z" fill="#d7ff58"/>
+  <text
+    x="32"
+    y="40"
+    fill="#d7ff58"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="800"
+    letter-spacing="-1.5"
+    text-anchor="middle"
+  >JCP</text>
 </svg>
