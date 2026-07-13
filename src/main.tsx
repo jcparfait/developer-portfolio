@@ -1,6 +1,7 @@
-import { StrictMode, type CSSProperties } from "react";
+import { StrictMode, type CSSProperties, type ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import "./refinements.css";
 
 type ProjectLink = {
   label: string;
@@ -150,6 +151,36 @@ const projects: Project[] = [
   },
 ];
 
+const workPrinciples = [
+  "Partir d’un usage concret.",
+  "Séparer interface et logique métier.",
+  "Tester les parcours critiques.",
+  "Livrer une démonstration accessible.",
+];
+
+const skills = [
+  {
+    category: "Backend",
+    title: "Ruby on Rails",
+    text: "Modélisation, API REST, authentification, services métier, tests Minitest.",
+  },
+  {
+    category: "Mobile",
+    title: "React Native & Expo",
+    text: "Navigation, état, consommation d’API, persistance locale et build Android.",
+  },
+  {
+    category: "Frontend",
+    title: "TypeScript & Hotwire",
+    text: "Interfaces responsive, Turbo Streams, composants et qualité TypeScript.",
+  },
+  {
+    category: "Production",
+    title: "PostgreSQL, Git & CI",
+    text: "Déploiement Heroku, GitHub Actions, sécurité et documentation recruteur.",
+  },
+];
+
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true">
@@ -234,6 +265,15 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
+function SectionHeading({ eyebrow, children }: { eyebrow: string; children: ReactNode }) {
+  return (
+    <div className="section-heading compact">
+      <p className="eyebrow">{eyebrow}</p>
+      {children}
+    </div>
+  );
+}
+
 function App() {
   return (
     <>
@@ -243,7 +283,7 @@ function App() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Retour en haut">
-          JCP<span>.</span>
+          Jean-Christophe Parfait
         </a>
         <nav aria-label="Navigation principale">
           <a href="#projects">Projets</a>
@@ -259,13 +299,13 @@ function App() {
       <main id="main-content">
         <section className="hero" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">Paris · Développement full-stack</p>
+            <p className="eyebrow">Développement full-stack</p>
             <h1>
-              Je conçois des applications
-              <span> utiles, lisibles et concrètes.</span>
+              Je développe des applications
+              <span> à partir de besoins concrets.</span>
             </h1>
             <p className="hero-intro">
-              Développeur Ruby on Rails et React Native, je transforme des besoins réels en produits fonctionnels, du modèle de données jusqu’à l’interface mobile.
+              Développeur Ruby on Rails et React Native, je travaille du modèle de données jusqu’à l’interface mobile pour construire des produits complets et fonctionnels.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">
@@ -290,10 +330,12 @@ function App() {
               <span className="status-dot">actif</span>
             </div>
             <div className="panel-body">
-              <p><span>01</span> Partir d’un usage concret.</p>
-              <p><span>02</span> Séparer interface et logique métier.</p>
-              <p><span>03</span> Tester les parcours critiques.</p>
-              <p><span>04</span> Livrer une démonstration accessible.</p>
+              {workPrinciples.map((principle, index) => (
+                <p key={principle}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  {principle}
+                </p>
+              ))}
             </div>
             <div className="panel-footer">
               <span>Rails</span>
@@ -303,9 +345,18 @@ function App() {
           </aside>
 
           <div className="hero-metrics" aria-label="Résumé du portfolio">
-            <div><strong>3</strong><span>produits terminés</span></div>
-            <div><strong>2</strong><span>écosystèmes principaux</span></div>
-            <div><strong>100%</strong><span>déployés et démontrables</span></div>
+            <div>
+              <strong>3</strong>
+              <span>produits terminés</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>écosystèmes principaux</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>déployés et démontrables</span>
+            </div>
           </div>
         </section>
 
@@ -326,10 +377,9 @@ function App() {
         </section>
 
         <section className="about-section" id="about">
-          <div className="section-heading compact">
-            <p className="eyebrow">À propos</p>
+          <SectionHeading eyebrow="À propos">
             <h2>Un parcours construit entre production, image et code.</h2>
-          </div>
+          </SectionHeading>
 
           <div className="about-grid">
             <div className="about-copy">
@@ -359,32 +409,18 @@ function App() {
         </section>
 
         <section className="skills-section" id="skills">
-          <div className="section-heading compact">
-            <p className="eyebrow">Compétences</p>
+          <SectionHeading eyebrow="Compétences">
             <h2>Une stack concentrée sur la livraison de produits complets.</h2>
-          </div>
+          </SectionHeading>
 
           <div className="skills-grid">
-            <div className="skill-card">
-              <span>Backend</span>
-              <strong>Ruby on Rails</strong>
-              <p>Modélisation, API REST, authentification, services métier, tests Minitest.</p>
-            </div>
-            <div className="skill-card">
-              <span>Mobile</span>
-              <strong>React Native & Expo</strong>
-              <p>Navigation, état, consommation d’API, persistance locale et build Android.</p>
-            </div>
-            <div className="skill-card">
-              <span>Frontend</span>
-              <strong>TypeScript & Hotwire</strong>
-              <p>Interfaces responsive, Turbo Streams, composants et qualité TypeScript.</p>
-            </div>
-            <div className="skill-card">
-              <span>Production</span>
-              <strong>PostgreSQL, Git & CI</strong>
-              <p>Déploiement Heroku, GitHub Actions, sécurité et documentation recruteur.</p>
-            </div>
+            {skills.map((skill) => (
+              <div className="skill-card" key={skill.category}>
+                <span>{skill.category}</span>
+                <strong>{skill.title}</strong>
+                <p>{skill.text}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -400,9 +436,11 @@ function App() {
       </main>
 
       <footer>
-        <span>Jean-Christophe Parfait · Paris</span>
+        <span>Jean-Christophe Parfait</span>
         <div>
-          <a href="https://github.com/jcparfait" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/jcparfait" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
           <a href={`mailto:${email}`}>Email</a>
         </div>
       </footer>
