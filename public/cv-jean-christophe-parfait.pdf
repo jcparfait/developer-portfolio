@@ -1,0 +1,86 @@
+%PDF-1.4
+%%%%%
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 4957 >>
+stream
+BT /F2 18 Tf 42.0 805.0 Td (Jean-Christophe Parfait) Tj ET
+BT /F2 10.5 Tf 42.0 785.0 Td (D\351veloppeur Full-Stack | Ruby on Rails - React Native - TypeScript) Tj ET
+BT /F1 8.2 Tf 42.0 770.0 Td (06 03 58 96 75 | jeanchristopheparfait@gmail.com | linkedin.com/in/jcparfait) Tj ET
+BT /F1 8.2 Tf 42.0 759.0 Td (github.com/jcparfait | jcparfait.github.io/developer-portfolio/) Tj ET
+BT /F2 10.5 Tf 42.0 745.0 Td (PROFIL) Tj ET
+0.72 G 0.60 w 42.0 742.0 m 553.0 742.0 l S 0 G
+BT /F1 8.5 Tf 42.0 730.0 Td (D\351veloppeur Full-Stack en reconversion, issu de la production digitale et de l'image. Je d\351veloppe des) Tj ET
+BT /F1 8.5 Tf 42.0 720.2 Td (applications web et mobiles avec Ruby on Rails, React Native, TypeScript et PostgreSQL. Mon exp\351rience de) Tj ET
+BT /F1 8.5 Tf 42.0 710.4 Td (responsable de studio renforce mes comp\351tences en organisation, coordination, priorisation et contr\364le qualit\351.) Tj ET
+BT /F2 10.5 Tf 42.0 698.6 Td (COMP\311TENCES TECHNIQUES) Tj ET
+0.72 G 0.60 w 42.0 695.6 m 553.0 695.6 l S 0 G
+BT /F1 8.3 Tf 42.0 683.6 Td (Backend : Ruby, Ruby on Rails, PostgreSQL, SQL, API REST, MVC, Devise, Minitest.) Tj ET
+BT /F1 8.3 Tf 42.0 674.1 Td (Frontend et mobile : React Native, Expo, TypeScript, JavaScript, Hotwire, Turbo, HTML, CSS.) Tj ET
+BT /F1 8.3 Tf 42.0 664.6 Td (Outils : Git, GitHub, GitHub Actions, Heroku, Postman, Figma, VS Code.) Tj ET
+BT /F2 10.5 Tf 42.0 653.1 Td (PROJETS TECHNIQUES) Tj ET
+0.72 G 0.60 w 42.0 650.1 m 553.0 650.1 l S 0 G
+BT /F2 8.8 Tf 42.0 638.1 Td (Tiny Act - Application mobile de micro-activit\351s) Tj ET
+BT /F1 7.8 Tf 42.0 627.6 Td (React Native, Expo, TypeScript, Ruby on Rails, PostgreSQL) Tj ET
+BT /F1 8.1 Tf 50.0 618.6 Td (- Recommandation contextuelle, activit\351s guid\351es, progression XP et espace personnalisable ; API Rails,) Tj ET
+BT /F1 8.1 Tf 50.0 609.4 Td (  authentification par token, APK Android, tests, CI et d\351ploiement Heroku.) Tj ET
+BT /F2 8.8 Tf 42.0 599.2 Td (Bill - Bar conversationnel assist\351 par IA) Tj ET
+BT /F1 7.8 Tf 42.0 588.7 Td (Ruby on Rails, Hotwire, Turbo Streams, RubyLLM, TheCocktailDB) Tj ET
+BT /F1 8.1 Tf 50.0 579.7 Td (- Conversation pilot\351e par LLM et logique m\351tier Ruby pour les contraintes, exclusions, doublons et fallbacks) Tj ET
+BT /F1 8.1 Tf 50.0 570.5 Td (  ; API cocktails, historique et biblioth\350que utilisateur.) Tj ET
+BT /F2 8.8 Tf 42.0 560.3 Td (Reelist - Biblioth\350que cin\351ma et Movie Night) Tj ET
+BT /F1 7.8 Tf 42.0 549.8 Td (Ruby on Rails, PostgreSQL, Devise, TMDB, Pexels) Tj ET
+BT /F1 8.1 Tf 50.0 540.8 Td (- Collections priv\351es, import de films, avis et recommandation selon l'humeur, la dur\351e et le genre ;) Tj ET
+BT /F1 8.1 Tf 50.0 531.6 Td (  authentification, int\351grations d'API, tests et CI GitHub Actions.) Tj ET
+BT /F2 10.5 Tf 42.0 520.4 Td (EXP\311RIENCE PROFESSIONNELLE) Tj ET
+0.72 G 0.60 w 42.0 517.4 m 553.0 517.4 l S 0 G
+BT /F2 8.8 Tf 42.0 505.4 Td (Responsable de studio photo / production digitale - JJA | 2016 - novembre 2025) Tj ET
+BT /F1 8.1 Tf 50.0 494.9 Td (- Pilotage d'un studio de production d'images e-commerce : workflows, priorisation, d\351lais et contr\364le) Tj ET
+BT /F1 8.1 Tf 50.0 485.7 Td (  qualit\351.) Tj ET
+BT /F1 8.1 Tf 50.0 476.5 Td (- Coordination photo, retouche et graphisme avec les \351quipes marketing, produit et e-commerce.) Tj ET
+BT /F1 8.1 Tf 50.0 467.3 Td (- Am\351lioration continue, automatisation de t\342ches, management op\351rationnel et fiabilisation de livrables \340) Tj ET
+BT /F1 8.1 Tf 50.0 458.1 Td (  forte volum\351trie.) Tj ET
+BT /F2 8.8 Tf 42.0 447.9 Td (Photographe - retoucheur / production d'images | avril 2014 - avril 2016) Tj ET
+BT /F1 8.1 Tf 50.0 437.4 Td (- Production visuelle, retouche, relation client, livraison et contr\364le qualit\351.) Tj ET
+BT /F2 8.8 Tf 42.0 427.2 Td (Responsable photographe - Photo.com | 2012 - 2014) Tj ET
+BT /F1 8.1 Tf 50.0 416.7 Td (- Production photo sur sites \351v\351nementiels \340 forte fr\351quentation.) Tj ET
+BT /F2 8.8 Tf 42.0 406.5 Td (Directeur de magasin - Fitness Boutique | septembre 2008 - mars 2012) Tj ET
+BT /F1 8.1 Tf 50.0 396.0 Td (- Management op\351rationnel, relation client, objectifs commerciaux et r\351solution de probl\350mes.) Tj ET
+BT /F2 10.5 Tf 42.0 384.8 Td (FORMATION) Tj ET
+0.72 G 0.60 w 42.0 381.8 m 553.0 381.8 l S 0 G
+BT /F2 8.8 Tf 42.0 369.8 Td (Le Wagon - D\351veloppeur Web Full-Stack | 2026) Tj ET
+BT /F1 8.0 Tf 42.0 359.3 Td (Ruby, Rails, JavaScript, HTML/CSS, SQL, PostgreSQL, Git/GitHub, MVC, projets en \351quipe et d\351ploiement.) Tj ET
+BT /F2 8.8 Tf 42.0 349.3 Td (\311cole 42 - Piscine C | 2024) Tj ET
+BT /F1 8.0 Tf 42.0 338.8 Td (C, algorithmique, terminal, logique de r\351solution de probl\350mes et correction par les pairs.) Tj ET
+BT /F2 8.8 Tf 42.0 328.8 Td (Formation continue en d\351veloppement web | En cours) Tj ET
+BT /F1 8.0 Tf 42.0 318.3 Td (Ruby, JavaScript, Git, SQL, programmation orient\351e objet et projets personnels.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000354 00000 n 
+0000000456 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5464
+%%EOF
