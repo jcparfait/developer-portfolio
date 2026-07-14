@@ -23,6 +23,8 @@ type Project = {
 };
 
 const email = "jeanchristopheparfait@gmail.com";
+const linkedinUrl = "https://www.linkedin.com/in/jcparfait";
+const cvUrl = `${import.meta.env.BASE_URL}cv-jean-christophe-parfait.pdf`;
 
 const projects: Project[] = [
   {
@@ -305,6 +307,22 @@ function App() {
               </a>
               <a
                 className="button button-secondary"
+                href={cvUrl}
+                download="CV_Jean-Christophe_Parfait_Developpeur_Fullstack_ATS.pdf"
+              >
+                Télécharger mon CV
+              </a>
+              <a
+                className="button button-secondary"
+                href={linkedinUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+                <ArrowIcon />
+              </a>
+              <a
+                className="button button-secondary"
                 href="https://github.com/jcparfait"
                 target="_blank"
                 rel="noreferrer"
@@ -409,8 +427,14 @@ function App() {
       <footer>
         <span>Jean-Christophe Parfait</span>
         <div>
+          <a href={linkedinUrl} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
           <a href="https://github.com/jcparfait" target="_blank" rel="noreferrer">
             GitHub
+          </a>
+          <a href={cvUrl} download="CV_Jean-Christophe_Parfait_Developpeur_Fullstack_ATS.pdf">
+            CV
           </a>
           <a href={`mailto:${email}`}>Email</a>
         </div>
