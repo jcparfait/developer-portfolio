@@ -283,7 +283,7 @@ function App() {
           <a href="#about">À propos</a>
           <a href="#skills">Compétences</a>
         </nav>
-        <a className="header-contact" href={`mailto:${email}`}>
+        <a className="header-contact" href="#contact">
           Contact
           <ArrowIcon />
         </a>
