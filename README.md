@@ -2,6 +2,8 @@
 
 Portfolio développeur de Jean-Christophe Parfait, construit avec React, TypeScript et Vite.
 
+**Site en ligne :** [https://jcparfait.github.io/developer-portfolio/](https://jcparfait.github.io/developer-portfolio/)
+
 ## Projets présentés
 
 1. Tiny Act — application mobile Expo / React Native avec API Rails
